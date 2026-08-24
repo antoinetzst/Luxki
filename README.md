@@ -103,7 +103,7 @@ Après avoir importé Luxki, appuyez sur le bouton de  **synchronisation 🔄** 
 
 ## 📚 Sources et crédits
 
-Les contenus utilisés dans Luxki proviennent de différentes sources pédagogiques, lexicales et communautaires.
+Les contenus utilisés dans Luxki proviennent de différentes sources pédagogiques, lexicales et communautaires. 
 
 > **Respect de la propriété intellectuelle**
 >
