@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div class="badge">
+        Compréhension · 🇱🇺 → 🇫🇷
+    </div>
+
+    <div class="main">
+        {{Mot}}{{#Genre}}
+    <span class="genre">[{{Genre}}.]</span>
+    {{/Genre}}
+    </div>
+
+    <div class="audio" id="audio-mot">
+        {{Audio mot}}
+    </div>
+
+</div>
+
+<script>
+setTimeout(() => {
+    const button = document.querySelector("#audio-mot .replay-button");
+    if (button) {
+        button.click();
+    }
+}, 100);
+</script>
+
+<!-- BEGIN ANKIHUB MODFICATIONS -->
+{{#ankihub_id}}
+    <div id="ankihub-note-id" hidden>{{ankihub_id}}</div>
+{{/ankihub_id}}
+<div id="ankihub-user-id" hidden>456060</div>
+<!-- END ANKIHUB MODFICATIONS -->
+
+<!--
+ANKIHUB_END
+Text below this comment will not be modified by AnkiHub or AnKing add-ons.
+Do not edit or remove this comment if you want to protect the content below.
+-->

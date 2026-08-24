@@ -1,0 +1,3 @@
+- Ajout des images
+- Ajout règles de grammaires
+- Ajout de l'organisation sous forme de leçon thématique

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="badge">
+        Phrase · FR → LUX
+    </div>
+
+    <div class="translation">
+        {{Traduction phrase}}
+    </div>
+
+    <hr id="answer">
+
+    <div class="answer">
+        {{Phrase}}
+    </div>
+
+    <div class="audio" id="audio-phrase">
+        {{Audio phrase}}
+    </div>
+    <div class="report-error">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrda30ucsHXsi0rOR8-eU7qaRFByarDNEmqLsyEiOV3fZptQ/viewform?usp=pp_url&entry.1838728117={{ID}}">
+            ⚑ Signaler une erreur
+        </a>
+    </div>
+</div>
+
+<script>
+setTimeout(() => {
+    const button = document.querySelector("#audio-phrase .replay-button");
+    if (button) {
+        button.click();
+    }
+}, 100);
+</script>
+

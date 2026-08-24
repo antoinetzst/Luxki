@@ -1,0 +1,22 @@
+{{#Mot}}
+
+
+<div class="container">
+
+    <div class="badge">
+        Compréhension orale 🇱🇺
+    </div>
+
+    <div class="audio">
+        {{Audio mot}}
+<script>
+setTimeout(() => {
+    const button = document.querySelector("#audio-mot .replay-button");
+    if (button) {
+        button.click();
+    }
+}, 100);
+</script>
+    </div>
+
+{{/Mot}}

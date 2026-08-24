@@ -1,0 +1,73 @@
+<div class="container">
+
+    <div class="badge">
+        Production · 🇫🇷 → 🇱🇺
+    </div>
+
+    <div class="translation">
+        {{Traduction}}
+    </div>
+
+    <hr id="answer">
+
+    <div class="answer">
+        {{Mot}}{{#Genre}}
+            <span class="genre">[{{Genre}}.]</span>
+        {{/Genre}}
+    </div>
+
+    <div class="typing-result">
+
+        <div class="typing-label">
+            Ta réponse
+        </div>
+
+        <div class="typing-comparison">
+            {{type:Mot}}
+        </div>
+
+    </div>
+
+    <div class="audio" id="audio-mot">
+        {{Audio mot}}
+    </div>
+
+    {{#Phrase}}
+
+    <div class="example">
+
+        <div class="example-lux">
+            {{Phrase}}
+        </div>
+
+        <div class="example-fr">
+            {{Traduction phrase}}
+        </div>
+
+        <div class="audio">
+            {{Audio phrase}}
+        </div>
+
+    </div>
+
+    {{/Phrase}}
+    <div class="report-error">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrda30ucsHXsi0rOR8-eU7qaRFByarDNEmqLsyEiOV3fZptQ/viewform?usp=pp_url&entry.1838728117={{ID}}">
+            ⚑ Signaler une erreur
+        </a>
+    </div>
+</div>
+
+<script>
+setTimeout(() => {
+
+    const button = document.querySelector("#audio-mot .replay-button");
+
+    if (button) {
+        button.click();
+    }
+
+}, 100);
+</script>
+
+

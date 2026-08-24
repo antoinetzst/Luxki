@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="badge">
+        Compréhension · 🇱🇺 → 🇫🇷
+    </div>
+
+    <div class="main">
+        {{Mot}}{{#Genre}}
+    <span class="genre">[{{Genre}}.]</span>
+    {{/Genre}}
+    </div>
+
+    <div class="audio">
+        {{Audio mot}}
+    </div>
+
+    <hr id="answer">
+
+    <div class="answer">
+        {{Traduction}}
+    </div>
+
+    {{#Phrase}}
+    <div class="example">
+
+        <div class="example-lux">
+            {{Phrase}}
+        </div>
+
+        <div class="example-fr">
+            {{Traduction phrase}}
+        </div>
+
+        <div class="audio">
+            {{Audio phrase}}
+        </div>
+
+    </div>
+    {{/Phrase}}
+    <div class="report-error">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrda30ucsHXsi0rOR8-eU7qaRFByarDNEmqLsyEiOV3fZptQ/viewform?usp=pp_url&entry.1838728117={{ID}}">
+            ⚑ Signaler une erreur
+        </a>
+    </div>
+</div>
+

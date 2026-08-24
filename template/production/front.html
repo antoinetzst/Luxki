@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="badge">
+        Production · 🇫🇷 → 🇱🇺
+    </div>
+
+    <div class="main">
+        {{Traduction}}
+    </div>
+
+    <div class="typing-section">
+
+        <div class="typing-label">
+            Réponse écrite
+            <span class="typing-optional">Facultatif</span>
+        </div>
+
+        <div class="typing-input">
+            {{type:Mot}}
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+setTimeout(() => {
+    const input = document.querySelector("#typeans");
+
+    if (input) {
+        input.placeholder = "Écris en luxembourgeois…";
+        input.setAttribute("autocomplete", "off");
+        input.setAttribute("autocorrect", "off");
+        input.setAttribute("autocapitalize", "off");
+        input.setAttribute("spellcheck", "false");
+    }
+}, 0);
+</script>
+
+<!-- BEGIN ANKIHUB MODFICATIONS -->
+
+{{#ankihub_id}}
+
+    <div id="ankihub-note-id" hidden>{{ankihub_id}}</div>
+
+{{/ankihub_id}}
+
+<div id="ankihub-user-id" hidden>456060</div>
+
+<!-- END ANKIHUB MODFICATIONS -->
+
+<!--
+
+ANKIHUB_END
+
+Text below this comment will not be modified by AnkiHub or AnKing add-ons.
+
+Do not edit or remove this comment if you want to protect the content below.
+
+-->
